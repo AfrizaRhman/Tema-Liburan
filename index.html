@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liburan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        nav ul.menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul.menu li {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        nav ul.menu li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #fff;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        nav ul.menu li a:hover {
+            background-color: rgba(21, 99, 21, 0.627);
+            border-radius: 5px;
+        }
+
+        /* Style untuk submenu */
+        nav ul.menu li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(21, 99, 21, 0.627);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul.menu li ul li {
+            margin: 0;
+        }
+
+        nav ul.menu li ul li a {
+            padding: 10px 20px;
+            color: fff;
+            white-space: nowrap;
+        }
+
+        nav ul.menu li ul li a:hover {
+            background-color: #abe3c3;
+        }
+
+        /* Tampilkan submenu ketika item di-hover */
+        nav ul.menu li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Liburan</div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Kota Pilihan</a>
+                    <ul>
+                        <li><a href="#">Bandung</a></li>
+                        <li><a href="#">Candi Borobudur</a></li>
+                        <li><a href="#">Pulau Dewata bali</a></li>
+                        <li><a href="#">Raja Ampat</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Paket</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="destinasi">
+            <h1>Destinasi Liburan</h1>
+            <div class="card">
+                <img src="img 1.jpg" alt="Destinasi 1">
+                <h2>Bandung</h2>
+                <p> Menikmati kota Bandung mulai dari wisata alamnya, pusat perbelanjaannya yang murah, hingga kulinernya yang lezat selalu jadi incaran bagi wisatawan.</p>
+                <i class="fa-solid fa-heart fa-lg" style="color: #ff0000;">1500</i>
+                <i class="fa-solid fa-comment-dots fa-lg" style="color: #000000;"> 350 </i>
+                <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card">
+                <img src="img 2.jpg" alt="Destinasi 2">
+                <h2>Candi Borobudur</h2>
+                <p> Terkait kepariwisataan, Borobudur adalah objek wisata tunggal di Indonesia yang paling banyak dikunjungi wisatawan.</p>
+                <i class="fa-solid fa-heart fa-lg" style="color: #ff0000;">2000</i>
+                <i class="fa-solid fa-comment-dots fa-lg" style="color: #000000;">500</i>
+                <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card">
+                <img src="img 3.jpg" alt="Destinasi 3">
+                <h2>Pulau Dewata Bali</h2>
+                <p>Perpaduan ajaib antara budaya yang penuh warna, penduduk yang ramah,dan alam yang menakjubkan  menjadikannya pilihan terbaik sebagai destinasi wisata.</p>
+                <i class="fa-solid fa-heart fa-lg" style="color: #ff0000;">2500</i>
+                <i class="fa-solid fa-comment-dots fa-lg" style="color: #000000;">600</i>
+                <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card">
+                <img src="img 4.jpg" alt="Destinasi 2">
+                <h2>Raja Ampat</h2>
+                <p>Raja Ampat adalah salah satu Kabupaten yang terletak di Provinsi Papua Barat Keindahan panorama alamnya membuat popularitas wisata Raja Ampat mendunia.</p>
+                <i class="fa-solid fa-heart fa-lg" style="color: #ff0000;">2700</i>
+                <i class="fa-solid fa-comment-dots fa-lg" style="color: #000000;">685</i>
+                <button>Baca Selengkapnya</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
